@@ -16,8 +16,11 @@ par2 = prompt("Inserisci un'altra parola");
 
 if (par1.length > par2.length) {
   stampa.innerHTML = "La parola più corta è " + par2;
-} else if (par1.length == par2.length) {
+  console.log(par2, par1);
+} else if (par1.length < par2.length){
+  stampa.innerHTML += "La parola più lungha è " + par2;
+  console.log(par1, par2);
+} else  {
   stampa.innerHTML = "Le parole hanno la stessa lunghezza";
-} else {
-  stampa.innerHTML = "La parola più lungha è " + par1;
+  console.log("Le parole identiche sono " + par1 + par2)
 }
